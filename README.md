@@ -4,7 +4,7 @@
 
 ---
 
-## 🚀 Core Features
+## Core Features
 
 - **Bayesian Attribution Engine:** Leverages Markov Chain Monte Carlo (MCMC) sampling to estimate channel-specific ROI with full credible intervals.
 - **Budget Optimization:** Uses SciPy-powered constrained minimization to find the optimal spend allocation that maximizes predicted revenue.
