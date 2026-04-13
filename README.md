@@ -26,6 +26,12 @@ Detailed breakdown of marketing spend effectiveness, utilizing Bayesian posterio
 
 Strategic recommendations for spend allocation based on the fitted model's ROI estimates and live market conditions.
 
+## 4. Scenario Planning
+
+Risk assessment and "what-if" analysis powered by Groq AI to evaluate potential marketing strategies under different market snapshots.
+
+
+
 
 
 
