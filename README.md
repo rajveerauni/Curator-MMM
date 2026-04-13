@@ -12,4 +12,21 @@ Curator MMM is a dual-surface platform designed to quantify marketing impact and
 
 • Custom SVG Visualization: High-performance, hand-written SVG charts with Framer Motion animations—no external charting libraries used.
 
+🖥️ Dashboard & Visuals
+
+1. Market Intelligence Overview
+
+The main dashboard provides a unified view of company KPIs, price trends, and AI-generated strategic insights.
+
+
+
+
+
+
+
+
+
+
+
+
 
