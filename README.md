@@ -14,7 +14,7 @@
 
 ---
 
-## 🖥️ Dashboard & Visuals
+##  Dashboard & Visuals
 
 ### 1. Market Intelligence Overview
 The main dashboard provides a unified view of company KPIs, price trends, and AI-generated strategic insights.
