@@ -18,6 +18,12 @@ Curator MMM is a dual-surface platform designed to quantify marketing impact and
 
 The main dashboard provides a unified view of company KPIs, price trends, and AI-generated strategic insights.
 
+## 2.Channel Attribution
+
+Detailed breakdown of marketing spend effectiveness, utilizing Bayesian posterior inference to decompose revenue by channel.
+
+
+
 
 
 
