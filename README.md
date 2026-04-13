@@ -22,6 +22,12 @@ The main dashboard provides a unified view of company KPIs, price trends, and AI
 
 Detailed breakdown of marketing spend effectiveness, utilizing Bayesian posterior inference to decompose revenue by channel.
 
+## 3. Budget Optimization
+
+Strategic recommendations for spend allocation based on the fitted model's ROI estimates and live market conditions.
+
+
+
 
 
 
