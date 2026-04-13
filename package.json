@@ -1,0 +1,10 @@
+{
+  "name": "curator-mmm",
+  "private": true,
+  "description": "Marketing Mix Modeling dashboard — npm scripts wrap Python tooling",
+  "scripts": {
+    "setup-python": "python -m pip install -r requirements.txt",
+    "dev": "python -m streamlit run app.py",
+    "pipeline": "python run_all.py"
+  }
+}

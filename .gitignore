@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# MMM runtime outputs
+outputs/
+
+# Next.js
+web/.next/
+web/node_modules/
+web/.env.local
+web/.env*.local
+web/tsconfig.tsbuildinfo
+
+# Environment / secrets
+.env
+.env.local
+.env.*.local
+
+# OS
+.DS_Store
+Thumbs.db

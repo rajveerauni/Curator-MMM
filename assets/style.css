@@ -1,0 +1,201 @@
+/* Curator MMM — Streamlit overrides for premium dark UI (design tokens) */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+  --background: #0b1326;
+  --surface-container: #171f33;
+  --surface-container-low: #131b2e;
+  --surface-container-high: #222a3d;
+  --surface-container-highest: #2d3449;
+  --surface-variant: #2d3449;
+  --primary: #76d6d5;
+  --primary-container: #008080;
+  --secondary: #adc7ff;
+  --secondary-container: #4a8eff;
+  --tertiary: #ffb692;
+  --on-surface: #dae2fd;
+  --on-background: #dae2fd;
+  --outline: #879392;
+  --outline-variant: #3e4949;
+  --error: #ffb4ab;
+  --ghost-border: rgba(135, 147, 146, 0.15);
+}
+
+/* Remove Streamlit chrome */
+#MainMenu { visibility: hidden; }
+footer { visibility: hidden; }
+header { visibility: hidden; }
+.stDeployButton { display: none; }
+
+html, body, [class*="css"] {
+  font-family: 'Inter', sans-serif;
+}
+
+/* App background */
+.stApp {
+  background-color: var(--background);
+  color: var(--on-surface);
+  font-family: 'Inter', sans-serif;
+}
+
+/* Main region */
+.block-container {
+  padding-top: 1.5rem;
+  max-width: 1400px;
+}
+
+/* Sidebar */
+[data-testid="stSidebar"] {
+  background-color: var(--background) !important;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+[data-testid="stSidebar"] .stMarkdown {
+  color: var(--secondary);
+}
+
+[data-testid="stSidebar"] * {
+  color: var(--secondary);
+}
+
+/* Metric cards */
+[data-testid="stMetric"] {
+  background: var(--surface-container-low);
+  border-radius: 12px;
+  padding: 1.5rem;
+  outline: 1px solid var(--ghost-border);
+}
+
+[data-testid="stMetricLabel"] {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--outline);
+}
+
+[data-testid="stMetricValue"] {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--on-surface);
+}
+
+/* Buttons */
+.stButton > button {
+  background: linear-gradient(135deg, #76d6d5, #adc7ff);
+  color: #002020;
+  font-weight: 700;
+  border: none;
+  border-radius: 12px;
+  padding: 0.5rem 1.25rem;
+  box-shadow: 0 10px 25px rgba(118, 214, 213, 0.2);
+}
+
+.stButton > button:hover {
+  filter: brightness(1.05);
+  color: #002020;
+}
+
+/* Secondary-style buttons (Streamlit has single class; use container + markdown for custom) */
+
+/* Sliders */
+.stSlider [data-baseweb="slider"] {
+  color: var(--primary);
+}
+
+.stSlider [data-testid="stThumbValue"] {
+  color: var(--on-surface);
+}
+
+/* Selectbox / inputs */
+.stSelectbox > div > div,
+.stTextInput > div > div > input,
+.stNumberInput > div > div > input {
+  background: var(--surface-container-high);
+  border: 1px solid var(--outline-variant);
+  color: var(--on-surface);
+  border-radius: 8px;
+}
+
+/* Charts area */
+.stPlotlyChart {
+  background: transparent !important;
+}
+
+.js-plotly-plot .plotly .main-svg {
+  border-radius: 12px;
+}
+
+/* Dataframe */
+.stDataFrame {
+  background: var(--surface-container-low);
+  border-radius: 12px;
+  border: 1px solid var(--ghost-border);
+}
+
+[data-testid="stDataFrame"] > div {
+  background: transparent !important;
+}
+
+/* Dividers */
+hr {
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+/* Progress bars */
+.stProgress > div > div > div > div {
+  background-color: var(--primary) !important;
+}
+
+/* Radio / sidebar navigation */
+.stRadio > div {
+  gap: 0.25rem;
+}
+
+.stRadio label {
+  color: var(--secondary) !important;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Expander */
+.streamlit-expanderHeader {
+  color: var(--on-surface);
+  background: var(--surface-container-low);
+  border-radius: 8px;
+}
+
+/* Hide default Streamlit sidebar navigation if present */
+[data-testid="stSidebarNav"] {
+  display: none;
+}
+
+/* Mobile bottom bar helper class (HTML blocks use inline + this) */
+.curator-mobile-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  backdrop-filter: blur(24px);
+  background: rgba(11, 19, 38, 0.85);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 8px 12px;
+}
+
+@media (min-width: 768px) {
+  .curator-mobile-nav {
+    display: none;
+  }
+}
+
+/* Glass panel utility for injected wrappers */
+.curator-glass {
+  background: rgba(45, 52, 73, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 16px 32px rgba(6, 14, 32, 0.4);
+  border-radius: 16px;
+  padding: 24px;
+  border: 1px solid var(--ghost-border);
+}

@@ -1,0 +1,12 @@
+# Relaxed pins: install pre-built wheels on Python 3.12–3.14 (Windows).
+# For a fully reproducible 3.11 environment, pin exact versions in a separate lockfile.
+pymc>=5.10,<6
+arviz>=0.17,<2
+streamlit>=1.32
+pandas>=2.2
+numpy>=2.0,<3
+matplotlib>=3.8
+scipy>=1.12
+scikit-learn>=1.4
+plotly>=5.19
+notebook>=7.1
